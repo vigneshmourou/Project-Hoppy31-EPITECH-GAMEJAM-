@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://g2iiwvfb463m"]
+
+[ext_resource type="Texture2D" uid="uid://da200bpye6u6v" path="res://APE/APE.png" id="1_bng2y"]
+
+[node name="APE" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 2293.0
+offset_bottom = 645.0
+texture = ExtResource("1_bng2y")

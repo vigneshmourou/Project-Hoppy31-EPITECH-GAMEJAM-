@@ -1,0 +1,141 @@
+[gd_scene load_steps=24 format=3 uid="uid://ctjhu6myygumc"]
+
+[ext_resource type="Script" path="res://script/Player.gd" id="1_d028r"]
+[ext_resource type="Texture2D" uid="uid://bngcffcayog2f" path="res://sprite/player/run_backward_1.png" id="2_uldr5"]
+[ext_resource type="Texture2D" uid="uid://dmngmxrr8y8v6" path="res://sprite/player/run_backward_2.png" id="3_08yfm"]
+[ext_resource type="Texture2D" uid="uid://g1diehfw31tu" path="res://sprite/player/run_backward_3.png" id="4_3fjw3"]
+[ext_resource type="Texture2D" uid="uid://uepi8b7m41ao" path="res://sprite/player/walk_forward_1.png" id="5_nwxae"]
+[ext_resource type="Texture2D" uid="uid://d4ib4y5joqm28" path="res://sprite/player/walk_forward_2.png" id="6_xuv05"]
+[ext_resource type="Texture2D" uid="uid://duhvasd2lo3l8" path="res://sprite/player/walk_forward_3.png" id="7_2vdht"]
+[ext_resource type="Texture2D" uid="uid://5g41svyvsxdn" path="res://sprite/player/left_walk_1.png" id="8_4ixru"]
+[ext_resource type="Texture2D" uid="uid://dj44jqdrmi3vk" path="res://sprite/player/left_walk_2.png" id="9_i10tn"]
+[ext_resource type="Texture2D" uid="uid://bppgfluv8ltg5" path="res://sprite/player/left_walk_3.png" id="10_uwmxd"]
+[ext_resource type="Texture2D" uid="uid://dyp66uk167pxi" path="res://sprite/hoppy/hoppy_backward_1.png" id="11_ksgwt"]
+[ext_resource type="Texture2D" uid="uid://de8pobhf7gu72" path="res://sprite/hoppy/hoppy_backward_2.png" id="12_7pex3"]
+[ext_resource type="Texture2D" uid="uid://b3o7ahr6d4f3h" path="res://sprite/hoppy/hoppy_backward_3.png" id="13_lft2t"]
+[ext_resource type="Texture2D" uid="uid://du7aynm0g0s4s" path="res://sprite/hoppy/hoppy_forward_1.png" id="14_8smcv"]
+[ext_resource type="Texture2D" uid="uid://cyewlhdadf3of" path="res://sprite/hoppy/hoppy_forward_2.png" id="15_aml8l"]
+[ext_resource type="Texture2D" uid="uid://cjh8fhp8s8ky2" path="res://sprite/hoppy/hoppy_forward_3.png" id="16_8qmk4"]
+[ext_resource type="Texture2D" uid="uid://bvstkxe51wgg3" path="res://sprite/hoppy/hoppy_left_1.png" id="17_3hgeu"]
+[ext_resource type="Texture2D" uid="uid://c1r0q7o7hk6p4" path="res://sprite/hoppy/hoppy_left_2.png" id="18_r0vbd"]
+[ext_resource type="Texture2D" uid="uid://bjvo8bp0xb5vn" path="res://sprite/hoppy/hoppy_left_3.png" id="19_2ucbs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fgmh1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_uldr5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_08yfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3fjw3")
+}],
+"loop": true,
+"name": &"backward",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_nwxae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xuv05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2vdht")
+}],
+"loop": true,
+"name": &"forward",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_4ixru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_i10tn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uwmxd")
+}],
+"loop": true,
+"name": &"left",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0akfe"]
+radius = 13.0
+height = 38.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bdfu1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ksgwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7pex3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lft2t")
+}],
+"loop": true,
+"name": &"hoppy_backward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_8smcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aml8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8qmk4")
+}],
+"loop": true,
+"name": &"hoppy_forward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_3hgeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_r0vbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2ucbs")
+}],
+"loop": true,
+"name": &"hoppy_left",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s5aua"]
+size = Vector2(25, 22)
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_d028r")
+
+[node name="player_animation" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fgmh1")
+animation = &"left"
+
+[node name="player_collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_0akfe")
+
+[node name="hoppy" type="Area2D" parent="."]
+position = Vector2(21, 10)
+scale = Vector2(0.7, 0.7)
+metadata/_edit_group_ = true
+
+[node name="hoppy_animation" type="AnimatedSprite2D" parent="hoppy"]
+sprite_frames = SubResource("SpriteFrames_bdfu1")
+animation = &"hoppy_left"
+
+[node name="hoppy_collision" type="CollisionShape2D" parent="hoppy"]
+position = Vector2(1.5, 1)
+shape = SubResource("RectangleShape2D_s5aua")

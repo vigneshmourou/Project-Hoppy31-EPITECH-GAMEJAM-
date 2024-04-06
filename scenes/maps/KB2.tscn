@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://drrxddg4rdwsc"]
+
+[ext_resource type="Texture2D" uid="uid://cr58yg412puru" path="res://sprite/maps/KB2.png" id="1_flv2a"]
+
+[node name="KB2" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 2302.0
+offset_bottom = 644.0
+texture = ExtResource("1_flv2a")

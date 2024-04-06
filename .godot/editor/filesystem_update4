@@ -1,4 +1,7 @@
-res://scenes/maps/KB2.tscn
-res://scenes/maps/APE.tscn
-res://scenes/player.tscn
 res://scenes/main_scene.tscn
+res://script/Player.gd
+res://scenes/player.tscn
+res://scenes/maps/KB2.tscn
+res://script/main_scene.gd
+res://scenes/character.tscn
+res://script/character.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://g2iiwvfb463m"]
+[gd_scene load_steps=10 format=3 uid="uid://di6kib3vpf7nu"]
 
 [ext_resource type="Texture2D" uid="uid://da200bpye6u6v" path="res://APE/APE.png" id="1_8f1lb"]
 
@@ -30,7 +30,7 @@ size = Vector2(143, 109)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u7k4p"]
 size = Vector2(47, 67)
 
-[node name="APE" type="Node2D"]
+[node name="APE2" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://drrxddg4rdwsc"]
+[gd_scene load_steps=27 format=3 uid="uid://b2kc5417gbfq5"]
 
 [ext_resource type="Texture2D" uid="uid://bv1fwalvt5gbm" path="res://KB2/KB2.png" id="1_hd80m"]
 [ext_resource type="Texture2D" uid="uid://dx5wnccngdi0b" path="res://img/vent.png" id="2_ghror"]
@@ -106,6 +106,7 @@ texture = ExtResource("2_ghror")
 
 [node name="Vent2" type="TextureRect" parent="TextureRect"]
 texture_filter = 3
+layout_mode = 0
 offset_left = 813.0
 offset_top = -13.0
 offset_right = 1315.0
@@ -115,6 +116,7 @@ texture = ExtResource("2_ghror")
 
 [node name="Vent3" type="TextureRect" parent="TextureRect"]
 texture_filter = 3
+layout_mode = 0
 offset_left = 34.0
 offset_top = 368.0
 offset_right = 536.0
@@ -135,6 +137,7 @@ position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
 [node name="table_blue2" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = 203.0
 offset_top = 311.0
 offset_right = 1828.0
@@ -146,6 +149,7 @@ position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
 [node name="table_blue3" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = 109.0
 offset_top = 311.0
 offset_right = 1734.0
@@ -157,6 +161,7 @@ position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
 [node name="table_blue4" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = 8.0
 offset_top = 312.0
 offset_right = 1633.0
@@ -168,6 +173,7 @@ position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
 [node name="table_blue5" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = -101.0
 offset_top = 312.0
 offset_right = 1524.0
@@ -193,6 +199,7 @@ position = Vector2(624.75, 209.5)
 shape = SubResource("RectangleShape2D_prncc")
 
 [node name="table_horizontal_blue2" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = -520.0
 offset_top = 372.0
 offset_right = 1258.0
@@ -204,6 +211,7 @@ position = Vector2(624.75, 209.5)
 shape = SubResource("RectangleShape2D_prncc")
 
 [node name="table_green" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = 360.0
 offset_top = 136.0
 offset_right = 2420.0
@@ -215,6 +223,7 @@ position = Vector2(724, 209)
 shape = SubResource("RectangleShape2D_vgrqd")
 
 [node name="table_green2" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = 357.0
 offset_top = 57.0
 offset_right = 2417.0
@@ -226,6 +235,7 @@ position = Vector2(724, 209)
 shape = SubResource("RectangleShape2D_vgrqd")
 
 [node name="table_green3" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = 357.0
 offset_top = -27.0
 offset_right = 2417.0
@@ -237,6 +247,7 @@ position = Vector2(724, 209)
 shape = SubResource("RectangleShape2D_vgrqd")
 
 [node name="table_vertical_green" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = 672.0
 offset_top = -182.0
 offset_right = 2297.0

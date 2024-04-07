@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c6bxw0sohftwk"
+path="res://.godot/imported/Mélissandre.dialogue-561fad7153d0e29964aff2fca4e02a35.tres"
+
+[deps]
+
+source_file="res://dialogue/Mélissandre.dialogue"
+dest_files=["res://.godot/imported/Mélissandre.dialogue-561fad7153d0e29964aff2fca4e02a35.tres"]
+
+[params]
+
+defaults=true

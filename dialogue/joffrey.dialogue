@@ -1,0 +1,18 @@
+~ start
+
+Joffrey: Bonjour, tu veux de l'aide?
+Moi: Salut... je n'étais pas là quand vous avez distribué les nouvelles cartes.
+Moi: Je peux avoir la mienne parce que je peux pas ouvrir la nouvelle porte maintenant.
+Joffrey: Mais pas de soucis! t'as le mot de passe ?
+Moi: Quel mot de passe?
+Joffrey: Bah on a créer un mot de passe pour recevoir ta carte. Tu l'as encore sur toi j'espère...
+Moi: OUPS! Je l'ai perdu...
+Joffrey: Ah bah sans ça je ne peux pas te donner la carte. Vas le chercher ou vas demander de l'aide à tes chers APE chéris.
+
+=> END
+
+~ help
+
+Joffrey: Tiens ta carte!
+
+=> END

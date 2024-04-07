@@ -1,0 +1,43 @@
+~ Thomas
+
+Thomas: Salut... qu'est-ce que tu fais ici? Vas travailler tes projets non ?
+Moi: Je vais le faire ne t'inquiètes pas... t'aurais juste le mot de passe pour recevoir ma nouvelle carte pour ouvrir la porte d'entrée?
+Thomas: Je l'ai...
+Thomas: Mais tu vas devoir le mériter je pense vu ta moulie à Minishell2...
+Moi: Je dois faire quoi encore...
+Thomas: Je sais pas .... peut-etre me réciter une partie du monologue d'Otis dans Astérix et Obelix: Mission Cleopatre?
+=> Chanson
+=> END
+
+~ Chanson
+
+Thomas: Aller commences!
+- Mais, vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation.
+	- Moi, si je devais raconter ma vie avec vous aujourd'hui,...
+		Thomas: FFAAUUUXXX! Tu veux retenter ?
+		- Oui => Chanson
+		- Non => END
+	- Moi, si je devais résumer ma vie aujourd’hui avec vous,...
+		- je dirais que c'est premièrement des rencontres, des personnes qui m'ont aidés, aussi des moments où je ne pouvais pas, ...
+			Thomas: FFAAUUUXXX! Tu veux retenter ?
+			- Oui => Chanson
+			- Non => END
+		- je dirais que c’est d’abord des rencontres, des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas,...
+			- où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards,
+				- les rencontres forgent une destinée…
+					Thomas: BRAVVOOOO! t'as tout bon!
+					Thomas: Je t'ai menti un peu je connais que la 2eme lettre : c'est un 'O'. => END!
+				- les rencontres créent une réalité...
+					Thomas: FFAAUUUXXX! Tu veux retenter ?
+					- Oui => Chanson
+					- Non => END 
+			- où je n'étais pas seul chez moi. Et c'est aussi curieux de se rappeler que les hasards,
+				Thomas: FFAAUUUXXX! Tu veux retenter ?
+				- Oui => Chanson
+				- Non => END	
+- Mais, vous devez, ne pas choisir entre la bonne et la mauvaise situation.
+	Thomas: FFAAUUUXXX! Tu veux retenter ?
+	- Oui => Chanson
+	- Non => END
+
+=> END

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c8qs4qvc8shxh"
+path="res://.godot/imported/Thomas.dialogue-b48e7baf02b7712eed468dd2d4413c0e.tres"
+
+[deps]
+
+source_file="res://dialogue/Thomas.dialogue"
+dest_files=["res://.godot/imported/Thomas.dialogue-b48e7baf02b7712eed468dd2d4413c0e.tres"]
+
+[params]
+
+defaults=true

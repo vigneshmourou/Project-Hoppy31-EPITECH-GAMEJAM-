@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://3mjlda3qy8ay"]
+[gd_scene load_steps=6 format=3 uid="uid://3mjlda3qy8ay"]
 
 [ext_resource type="Texture2D" uid="uid://jt5wosy7h3p2" path="res://sprite/npc/Alexandre/ALEX_face.png" id="1_5xyx3"]
+[ext_resource type="Script" path="res://scenes/npc/alexandre_npc.gd" id="1_stphm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8idcj"]
 animations = [{
@@ -22,6 +23,7 @@ radius = 29.1548
 
 [node name="Alexandre_npc" type="CharacterBody2D"]
 collision_layer = 8
+script = ExtResource("1_stphm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -36,3 +38,5 @@ shape = SubResource("CapsuleShape2D_g3gfl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_usflc")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

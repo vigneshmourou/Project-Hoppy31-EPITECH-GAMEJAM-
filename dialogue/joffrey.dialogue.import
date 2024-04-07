@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cw0qya7i74a4f"
+path="res://.godot/imported/joffrey.dialogue-766d2c6316f98539ca067906b9bc89de.tres"
+
+[deps]
+
+source_file="res://dialogue/joffrey.dialogue"
+dest_files=["res://.godot/imported/joffrey.dialogue-766d2c6316f98539ca067906b9bc89de.tres"]
+
+[params]
+
+defaults=true

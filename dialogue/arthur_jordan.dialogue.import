@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cqbc0c6m30mnc"
+path="res://.godot/imported/arthur_jordan.dialogue-43bcddfa1d77b1d191d9ff78730f665d.tres"
+
+[deps]
+
+source_file="res://dialogue/arthur_jordan.dialogue"
+dest_files=["res://.godot/imported/arthur_jordan.dialogue-43bcddfa1d77b1d191d9ff78730f665d.tres"]
+
+[params]
+
+defaults=true

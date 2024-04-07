@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://lgy7gt2wak5s"]
+[gd_scene load_steps=6 format=3 uid="uid://lgy7gt2wak5s"]
 
 [ext_resource type="Texture2D" uid="uid://db03kdakalvvn" path="res://sprite/npc/Thomas/tomate_face.png" id="1_j64av"]
+[ext_resource type="Script" path="res://scenes/npc/thomas_npc.gd" id="1_jl6dn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cjx3l"]
 animations = [{
@@ -22,6 +23,7 @@ radius = 34.0
 
 [node name="Thomas_npc" type="CharacterBody2D"]
 collision_layer = 8
+script = ExtResource("1_jl6dn")
 
 [node name="thomas_animation" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -36,3 +38,5 @@ shape = SubResource("CapsuleShape2D_df50a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="thomas_area"]
 shape = SubResource("CircleShape2D_nyxgi")
+
+[connection signal="body_entered" from="thomas_area" to="." method="_on_thomas_area_body_entered"]

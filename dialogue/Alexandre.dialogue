@@ -1,0 +1,22 @@
+~ Alexandre
+
+Alexandre: Encore toi ?!
+Moi: Non mais promis c'est la dernière fois!
+Alexandre: Vasy dis t'es là pourquoi?
+Moi: Bah en fait, j'ai pas le mot de passe pour recevoir ma nouvelle carte pour ouvrir la nouvelle porte d'entrée... t'aurais le mot de passe?
+Alexandre: Pffffff... Et pourquoi t'as ramené Hoppy avec toi ?
+Moi: Bah il veut sortir.
+Alexandre: Pas un pour ratrapper l'autre.
+Alexandre: Pourquoi je te le donnerai ?
+- Parce que tu m'adores! 
+	Alexandre: Reviens quand je t'aprécierais.
+	=> END
+- Parce que j'en ai besoin pour travailler et sauver hoppy de cet endroit.
+	Alexandre: Mais ça me rapporte quoi ?
+	- Tu deviendras mon APE préféré!
+		Alexandre: Parce que je ne le suis pas déjà ? 
+		=> END
+	- T'es beau.
+		Alexandre: Ah merci tiens la 4eme lettre c'est 'Z' 
+		=> END
+=> END

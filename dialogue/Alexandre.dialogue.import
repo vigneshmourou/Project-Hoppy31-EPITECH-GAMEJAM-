@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dp3qcqa4156h3"
+path="res://.godot/imported/Alexandre.dialogue-a5042cbb08781bca15452c47811af8a9.tres"
+
+[deps]
+
+source_file="res://dialogue/Alexandre.dialogue"
+dest_files=["res://.godot/imported/Alexandre.dialogue-a5042cbb08781bca15452c47811af8a9.tres"]
+
+[params]
+
+defaults=true

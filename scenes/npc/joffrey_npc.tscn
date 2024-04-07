@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://c6rrjwp8smcn"]
+[gd_scene load_steps=6 format=3 uid="uid://c6rrjwp8smcn"]
 
+[ext_resource type="Script" path="res://scenes/npc/joffrey_npc.gd" id="1_nni4s"]
 [ext_resource type="Texture2D" uid="uid://c8bwy6q3otp0y" path="res://sprite/npc/Joffrey/face_jojo.png" id="1_ons2d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7e7lj"]
@@ -23,6 +24,7 @@ height = 66.0
 
 [node name="Joffrey_npc" type="CharacterBody2D"]
 collision_layer = 8
+script = ExtResource("1_nni4s")
 
 [node name="joffrey_anim" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -37,3 +39,5 @@ shape = SubResource("CapsuleShape2D_g3sv2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="joffrey_area"]
 shape = SubResource("CapsuleShape2D_t4mfc")
+
+[connection signal="body_entered" from="joffrey_area" to="." method="_on_joffrey_area_body_entered"]

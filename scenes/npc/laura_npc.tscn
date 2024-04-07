@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcscy1f73xm0w"]
+[gd_scene load_steps=6 format=3 uid="uid://dcscy1f73xm0w"]
 
+[ext_resource type="Script" path="res://scenes/npc/laura_npc.gd" id="1_ewvn1"]
 [ext_resource type="Texture2D" uid="uid://d3n5d08b7wjcy" path="res://sprite/npc/Laura/lora.png" id="1_w0i2d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1hind"]
@@ -27,6 +28,7 @@ radius = 35.0
 
 [node name="Laura_npc" type="CharacterBody2D"]
 collision_layer = 8
+script = ExtResource("1_ewvn1")
 
 [node name="laura_animation" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -41,3 +43,5 @@ shape = SubResource("CapsuleShape2D_b0xsl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="laura_area"]
 shape = SubResource("CircleShape2D_7757u")
+
+[connection signal="body_entered" from="laura_area" to="." method="_on_laura_area_body_entered"]

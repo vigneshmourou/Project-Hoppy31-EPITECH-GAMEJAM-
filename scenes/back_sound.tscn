@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpsh1hrojnl5n"]
+
+[ext_resource type="AudioStream" uid="uid://c18prkar3rwor" path="res://music_jam.wav" id="1_0wq53"]
+
+[node name="back_sound" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_0wq53")
+autoplay = true
+max_distance = 2012.0
+attenuation = 1.07177

@@ -9,5 +9,6 @@ func _get_configuration_warnings():
 	else:
 		return ""
 func _on_body_entered(body):
+	if body.name != "hoppy":
 		if get_tree().change_scene_to_file(target_map_path) != OK:
 			print("Error: scene path seems to be wrong.")

@@ -132,7 +132,9 @@ offset_right = 1939.0
 offset_bottom = 861.0
 texture = ExtResource("3_3bpm7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue"]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue/StaticBody2D"]
 position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
@@ -144,7 +146,9 @@ offset_right = 1828.0
 offset_bottom = 864.0
 texture = ExtResource("3_3bpm7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue2" groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue2/StaticBody2D" groups=["wall"]]
 position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
@@ -156,7 +160,9 @@ offset_right = 1734.0
 offset_bottom = 864.0
 texture = ExtResource("3_3bpm7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue3" groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue3/StaticBody2D" groups=["wall"]]
 position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
@@ -168,7 +174,9 @@ offset_right = 1633.0
 offset_bottom = 865.0
 texture = ExtResource("3_3bpm7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue4" groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue4/StaticBody2D" groups=["wall"]]
 position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
@@ -180,7 +188,9 @@ offset_right = 1524.0
 offset_bottom = 865.0
 texture = ExtResource("3_3bpm7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue5" groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue5/StaticBody2D" groups=["wall"]]
 position = Vector2(407.5, 275.5)
 shape = SubResource("RectangleShape2D_wwqv0")
 
@@ -194,7 +204,9 @@ offset_right = 1259.0
 offset_bottom = 821.0
 texture = ExtResource("4_fp6v6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_horizontal_blue" groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_horizontal_blue"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_horizontal_blue/StaticBody2D" groups=["wall"]]
 position = Vector2(624.75, 209.5)
 shape = SubResource("RectangleShape2D_prncc")
 
@@ -206,7 +218,9 @@ offset_right = 1258.0
 offset_bottom = 894.0
 texture = ExtResource("4_fp6v6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_horizontal_blue2" groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_horizontal_blue2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_horizontal_blue2/StaticBody2D" groups=["wall"]]
 position = Vector2(624.75, 209.5)
 shape = SubResource("RectangleShape2D_prncc")
 
@@ -218,7 +232,9 @@ offset_right = 2420.0
 offset_bottom = 658.0
 texture = ExtResource("4_fp6v6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_green" groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_green"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_green/StaticBody2D" groups=["wall"]]
 position = Vector2(724, 209)
 shape = SubResource("RectangleShape2D_vgrqd")
 
@@ -230,7 +246,9 @@ offset_right = 2417.0
 offset_bottom = 579.0
 texture = ExtResource("4_fp6v6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_green2" groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_green2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_green2/StaticBody2D" groups=["wall"]]
 position = Vector2(724, 209)
 shape = SubResource("RectangleShape2D_vgrqd")
 
@@ -319,4 +337,3 @@ shape = SubResource("RectangleShape2D_fmcd2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
 position = Vector2(371, 382)
 shape = SubResource("RectangleShape2D_rkob6")
-one_way_collision = true

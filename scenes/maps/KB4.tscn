@@ -40,3 +40,6 @@ polygon = PackedVector2Array(731, 674, 733, 666, 749, 650, 776, 676, 776, 685, 7
 
 [node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="TextureRect/StaticBody2D"]
 polygon = PackedVector2Array(735, 763, 734, 754, 760, 728, 777, 746, 776, 753, 753, 776, 734, 763)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="TextureRect/StaticBody2D"]
+polygon = PackedVector2Array(394, 430, 440, 382, 534, 382, 577, 431, 577, 508, 577, 522, 536, 565, 432, 565, 395, 522)

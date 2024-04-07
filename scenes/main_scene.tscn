@@ -9,10 +9,10 @@
 [ext_resource type="Script" path="res://script/exit.gd" id="7_63sbb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qbgx0"]
-size = Vector2(86.3558, 8.28113)
+size = Vector2(86.3558, 17.781)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cx1jo"]
-size = Vector2(56, 10.1358)
+size = Vector2(56, 5.0679)
 
 [node name="main_scene" type="Node2D" groups=["wall"]]
 script = ExtResource("1_o0cho")
@@ -40,7 +40,7 @@ target_map_path = "res://scenes/kb_4_scene.tscn"
 script = ExtResource("6_7etox")
 
 [node name="doors_collision" type="CollisionShape2D" parent="doors"]
-position = Vector2(727.051, 324.205)
+position = Vector2(725.784, 322.752)
 rotation = -0.71733
 shape = SubResource("RectangleShape2D_qbgx0")
 
@@ -48,7 +48,7 @@ shape = SubResource("RectangleShape2D_qbgx0")
 script = ExtResource("7_63sbb")
 
 [node name="exit_collision" type="CollisionShape2D" parent="exit"]
-position = Vector2(720, 315)
+position = Vector2(718.334, 313.091)
 rotation = -0.71733
 shape = SubResource("RectangleShape2D_cx1jo")
 

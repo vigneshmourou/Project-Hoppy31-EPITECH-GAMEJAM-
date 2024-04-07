@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dxgrmh6po2cqf"
+path="res://.godot/imported/Ilyas.dialogue-42434e4e6d72da85975f6ddb7fb767e1.tres"
+
+[deps]
+
+source_file="res://dialogue/Ilyas.dialogue"
+dest_files=["res://.godot/imported/Ilyas.dialogue-42434e4e6d72da85975f6ddb7fb767e1.tres"]
+
+[params]
+
+defaults=true

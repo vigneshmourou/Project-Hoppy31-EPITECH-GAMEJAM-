@@ -1,13 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqoqpky082p1h"]
+[gd_scene load_steps=6 format=3 uid="uid://cu3r3gruyw4rj"]
 
 [ext_resource type="Script" path="res://scenes/npc/melissandre_npc.gd" id="1_2kdom"]
-[ext_resource type="Texture2D" uid="uid://kifn4f33rqa4" path="res://sprite/npc/Mely/lunette_mely.png" id="2_2gtuq"]
+[ext_resource type="Texture2D" uid="uid://kifn4f33rqa4" path="res://sprite/npc/Mely/lunette_mely.png" id="2_0f2oq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52ha3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_2gtuq")
+"texture": ExtResource("2_0f2oq")
 }],
 "loop": true,
 "name": &"face",
@@ -22,6 +22,7 @@ height = 14.0
 radius = 31.4006
 
 [node name="Mélissandre_npc" type="CharacterBody2D"]
+collision_layer = 8
 script = ExtResource("1_2kdom")
 
 [node name="melissandre_animation" type="AnimatedSprite2D" parent="."]

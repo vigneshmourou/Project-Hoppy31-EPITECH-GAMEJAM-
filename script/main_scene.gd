@@ -14,6 +14,8 @@ func _ready():
 		$Character/character_animation.animation = "player_backward"
 		$Character/hoppy/hoppy_ani.animation = "hoppy_backward"
 	Global.last_scene = current_scene
+	if Global.exit_status == true:
+		$Ilyas_npc.positon = Vector2(400, 200)
 
 func _on_CollisionShape2D_body_entered(body):
 	if body.is_in_group("wall"):

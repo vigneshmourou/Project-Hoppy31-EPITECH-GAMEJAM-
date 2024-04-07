@@ -12,7 +12,7 @@ func _process(delta):
 			if Global.laura_status == true:
 				if Global.melissandre_status == true:
 					if Global.thomas_status == true:
-						Global.doors_status = true
+						Global.allowed_card = true
 
 func _on_body_entered(body):
 	if body.name != "hoppy":

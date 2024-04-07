@@ -39,3 +39,5 @@ collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ilyas_area"]
 shape = SubResource("CircleShape2D_xgjeo")
+
+[connection signal="body_entered" from="ilyas_area" to="." method="_on_ilyas_area_body_entered"]

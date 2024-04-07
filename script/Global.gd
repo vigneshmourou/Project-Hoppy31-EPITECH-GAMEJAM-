@@ -3,6 +3,7 @@ extends Node
 var last_scene = ""
 var start_game = false
 var doors_status = false
+var allowed_card = false
 var exit_status = false
 var alexandre_status = false
 var arthur_status = false

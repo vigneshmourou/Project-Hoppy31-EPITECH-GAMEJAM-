@@ -9,14 +9,6 @@ func _ready():
 	$character_animation.animation = "player_left"
 	$character_animation.flip_h = true
 	$hoppy/hoppy_ani.animation = "hoppy_left"
-	$".".position = Vector2(720.1543, 316.5107)
-
-#func _physics_process(delta):
-	#motion = Vector2.ZERO
-	#motion.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
-	#motion.y = Input.get_action_strength("move_backward") - Input.get_action_strength("move_forward")
-	#move_and_slide(motion)
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _physics_process(delta):
 	var collision = move_and_collide(velocity * delta)
@@ -38,12 +30,12 @@ func _process(delta):
 		motion.x -= 2
 		$character_animation.animation = "player_left"
 		$hoppy/hoppy_ani.animation = "hoppy_left"
-		$hoppy.position = Vector2(21, 10)
+		$hoppy.position = Vector2(21, 7)
 	if Input.is_action_pressed("move_right"):
 		motion.x += 2
 		$character_animation.animation = "player_left"
 		$hoppy/hoppy_ani.animation = "hoppy_left"
-		$hoppy.position = Vector2(-21, 10)
+		$hoppy.position = Vector2(-21, 7)
 		
 	if motion.x != 0:
 		if motion.x < 0:

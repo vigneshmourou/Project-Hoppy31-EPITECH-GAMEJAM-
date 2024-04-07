@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc71cdf37lqeh"]
+
+[ext_resource type="PackedScene" uid="uid://g2iiwvfb463m" path="res://scenes/maps/APE.tscn" id="1_nb7mo"]
+[ext_resource type="PackedScene" uid="uid://cckcdl4luo4gc" path="res://scenes/portal.tscn" id="2_dgpsw"]
+[ext_resource type="PackedScene" uid="uid://ccjx3oge4wesk" path="res://scenes/character.tscn" id="3_hfkry"]
+
+[node name="KB4_scene" type="Node2D"]
+
+[node name="APE" parent="." instance=ExtResource("1_nb7mo")]
+
+[node name="Portal" parent="." instance=ExtResource("2_dgpsw")]
+position = Vector2(1117, 187)
+rotation = 1.52367
+target_map_path = "res://scenes/main_scene.tscn"
+
+[node name="Character" parent="." instance=ExtResource("3_hfkry")]
+position = Vector2(1048, 188)

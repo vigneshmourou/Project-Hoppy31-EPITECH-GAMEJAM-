@@ -39,6 +39,7 @@ offset_bottom = 645.0
 texture = ExtResource("1_8f1lb")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(756.5, 392.5)

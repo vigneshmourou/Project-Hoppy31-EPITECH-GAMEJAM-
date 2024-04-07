@@ -133,6 +133,7 @@ offset_bottom = 861.0
 texture = ExtResource("3_3bpm7")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue/StaticBody2D"]
 position = Vector2(407.5, 275.5)
@@ -147,6 +148,7 @@ offset_bottom = 864.0
 texture = ExtResource("3_3bpm7")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue2"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue2/StaticBody2D" groups=["wall"]]
 position = Vector2(407.5, 275.5)
@@ -161,6 +163,7 @@ offset_bottom = 864.0
 texture = ExtResource("3_3bpm7")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue3"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue3/StaticBody2D" groups=["wall"]]
 position = Vector2(407.5, 275.5)
@@ -175,6 +178,7 @@ offset_bottom = 865.0
 texture = ExtResource("3_3bpm7")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue4"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue4/StaticBody2D" groups=["wall"]]
 position = Vector2(407.5, 275.5)
@@ -189,6 +193,7 @@ offset_bottom = 865.0
 texture = ExtResource("3_3bpm7")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_blue5"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_blue5/StaticBody2D" groups=["wall"]]
 position = Vector2(407.5, 275.5)
@@ -205,6 +210,7 @@ offset_bottom = 821.0
 texture = ExtResource("4_fp6v6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_horizontal_blue"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_horizontal_blue/StaticBody2D" groups=["wall"]]
 position = Vector2(624.75, 209.5)
@@ -219,6 +225,7 @@ offset_bottom = 894.0
 texture = ExtResource("4_fp6v6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_horizontal_blue2"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_horizontal_blue2/StaticBody2D" groups=["wall"]]
 position = Vector2(624.75, 209.5)
@@ -233,6 +240,7 @@ offset_bottom = 658.0
 texture = ExtResource("4_fp6v6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_green"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_green/StaticBody2D" groups=["wall"]]
 position = Vector2(724, 209)
@@ -247,6 +255,7 @@ offset_bottom = 579.0
 texture = ExtResource("4_fp6v6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_green2"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_green2/StaticBody2D" groups=["wall"]]
 position = Vector2(724, 209)
@@ -261,6 +270,7 @@ offset_bottom = 495.0
 texture = ExtResource("4_fp6v6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_green3" groups=["wall"]]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_green3/StaticBody2D" groups=["wall"]]
 position = Vector2(724, 209)
@@ -275,6 +285,7 @@ offset_bottom = 371.0
 texture = ExtResource("3_3bpm7")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_vertical_green" groups=["wall"]]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/table_vertical_green/StaticBody2D" groups=["wall"]]
 texture_filter = 1
@@ -282,6 +293,7 @@ position = Vector2(406.5, 276)
 shape = SubResource("RectangleShape2D_7gypu")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." groups=["wall"]]
+collision_layer = 4
 
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
 shape = SubResource("SegmentShape2D_ot0dv")

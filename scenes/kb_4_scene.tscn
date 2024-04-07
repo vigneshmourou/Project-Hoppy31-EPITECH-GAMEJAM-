@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://nw0gl8wh37gf"]
+[gd_scene load_steps=8 format=3 uid="uid://nw0gl8wh37gf"]
 
 [ext_resource type="Script" path="res://script/kb_4_scene.gd" id="1_av2cr"]
 [ext_resource type="PackedScene" uid="uid://cb572pkavmuhj" path="res://scenes/maps/KB4.tscn" id="1_ppuae"]
 [ext_resource type="PackedScene" uid="uid://ccjx3oge4wesk" path="res://scenes/character.tscn" id="2_himr0"]
 [ext_resource type="PackedScene" uid="uid://cckcdl4luo4gc" path="res://scenes/portal.tscn" id="3_fvmd6"]
 [ext_resource type="PackedScene" uid="uid://3mjlda3qy8ay" path="res://scenes/npc/alexandre_npc.tscn" id="3_j4qgj"]
+[ext_resource type="PackedScene" uid="uid://bqoqpky082p1h" path="res://scenes/npc/mélissandre_npc.tscn" id="5_r4kqv"]
 [ext_resource type="PackedScene" uid="uid://dcscy1f73xm0w" path="res://scenes/npc/laura_npc.tscn" id="6_g7g3h"]
 
 [node name="KB4_scene" type="Node2D"]
@@ -17,6 +18,9 @@ position = Vector2(830, 45)
 
 [node name="Alexandre_npc" parent="." instance=ExtResource("3_j4qgj")]
 position = Vector2(848, 542)
+
+[node name="Mélissandre_npc" parent="." instance=ExtResource("5_r4kqv")]
+position = Vector2(265, 100)
 
 [node name="Character" parent="." instance=ExtResource("2_himr0")]
 position = Vector2(587, 432)

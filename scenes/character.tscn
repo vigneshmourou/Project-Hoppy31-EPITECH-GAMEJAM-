@@ -120,7 +120,7 @@ size = Vector2(23, 6.28571)
 [node name="Character" type="CharacterBody2D"]
 texture_filter = 1
 disable_mode = 2
-collision_mask = 6
+collision_mask = 14
 script = ExtResource("1_bonsw")
 metadata/_edit_group_ = true
 
@@ -136,7 +136,7 @@ shape = SubResource("RectangleShape2D_pp1r7")
 position = Vector2(21, 7)
 scale = Vector2(0.7, 0.7)
 disable_mode = 2
-collision_mask = 6
+collision_mask = 14
 floor_stop_on_slope = false
 floor_block_on_wall = false
 script = ExtResource("11_4jhlr")

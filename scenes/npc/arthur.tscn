@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3uqc23h08uxt"]
+
+[ext_resource type="Texture2D" uid="uid://tkjvyk7e5htc" path="res://sprite/npc/Arthur/arture_face.png" id="1_17bo1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mp77y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_17bo1")
+}],
+"loop": true,
+"name": &"face",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w05m5"]
+radius = 3.0
+height = 10.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ytbxy"]
+radius = 33.0151
+
+[node name="Arthur" type="CharacterBody2D"]
+texture_filter = 1
+collision_layer = 8
+
+[node name="arthur_anim" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_mp77y")
+animation = &"face"
+
+[node name="arthur_collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("CapsuleShape2D_w05m5")
+
+[node name="arthur_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arthur_area"]
+shape = SubResource("CircleShape2D_ytbxy")

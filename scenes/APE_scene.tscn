@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://dc71cdf37lqeh"]
+[gd_scene load_steps=7 format=3 uid="uid://dc71cdf37lqeh"]
 
 [ext_resource type="PackedScene" uid="uid://g2iiwvfb463m" path="res://scenes/maps/APE.tscn" id="1_nb7mo"]
 [ext_resource type="PackedScene" uid="uid://cckcdl4luo4gc" path="res://scenes/portal.tscn" id="2_dgpsw"]
 [ext_resource type="PackedScene" uid="uid://ccjx3oge4wesk" path="res://scenes/character.tscn" id="3_hfkry"]
+[ext_resource type="PackedScene" uid="uid://c6rrjwp8smcn" path="res://scenes/npc/joffrey_npc.tscn" id="4_mfv5e"]
+[ext_resource type="PackedScene" uid="uid://d3uqc23h08uxt" path="res://scenes/npc/arthur.tscn" id="5_hpi8p"]
+[ext_resource type="PackedScene" uid="uid://lgy7gt2wak5s" path="res://scenes/npc/thomas_npc.tscn" id="6_7mykp"]
 
 [node name="KB4_scene" type="Node2D"]
 
@@ -13,5 +16,14 @@ position = Vector2(1117, 187)
 rotation = 1.52367
 target_map_path = "res://scenes/main_scene.tscn"
 
+[node name="Joffrey_npc" parent="." instance=ExtResource("4_mfv5e")]
+position = Vector2(89, 273)
+
+[node name="Arthur" parent="." instance=ExtResource("5_hpi8p")]
+position = Vector2(843, 345)
+
+[node name="Thomas_npc" parent="." instance=ExtResource("6_7mykp")]
+position = Vector2(594, 153)
+
 [node name="Character" parent="." instance=ExtResource("3_hfkry")]
-position = Vector2(1048, 188)
+position = Vector2(1002, 188)

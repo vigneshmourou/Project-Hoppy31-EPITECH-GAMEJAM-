@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://ccjx3oge4wesk"]
+[gd_scene load_steps=25 format=3 uid="uid://ccjx3oge4wesk"]
 
 [ext_resource type="Texture2D" uid="uid://bngcffcayog2f" path="res://sprite/player/run_backward_1.png" id="1_45a8v"]
 [ext_resource type="Script" path="res://script/character.gd" id="1_bonsw"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://5g41svyvsxdn" path="res://sprite/player/left_walk_1.png" id="7_loknn"]
 [ext_resource type="Texture2D" uid="uid://dj44jqdrmi3vk" path="res://sprite/player/left_walk_2.png" id="8_g20ts"]
 [ext_resource type="Texture2D" uid="uid://bppgfluv8ltg5" path="res://sprite/player/left_walk_3.png" id="9_rnx3l"]
+[ext_resource type="Script" path="res://script/hoppy.gd" id="11_4jhlr"]
 [ext_resource type="Texture2D" uid="uid://dyp66uk167pxi" path="res://sprite/hoppy/hoppy_backward_1.png" id="11_lj62h"]
 [ext_resource type="Texture2D" uid="uid://de8pobhf7gu72" path="res://sprite/hoppy/hoppy_backward_2.png" id="12_1463e"]
 [ext_resource type="Texture2D" uid="uid://b3o7ahr6d4f3h" path="res://sprite/hoppy/hoppy_backward_3.png" id="13_0ni2s"]
@@ -137,6 +138,7 @@ scale = Vector2(0.7, 0.7)
 disable_mode = 2
 floor_stop_on_slope = false
 floor_block_on_wall = false
+script = ExtResource("11_4jhlr")
 metadata/_edit_group_ = true
 
 [node name="hoppy_ani" type="AnimatedSprite2D" parent="hoppy"]

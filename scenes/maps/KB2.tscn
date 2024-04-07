@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://drrxddg4rdwsc"]
+[gd_scene load_steps=10 format=3 uid="uid://drrxddg4rdwsc"]
 
 [ext_resource type="Texture2D" uid="uid://bv1fwalvt5gbm" path="res://KB2/KB2.png" id="1_hd80m"]
 [ext_resource type="Texture2D" uid="uid://dx5wnccngdi0b" path="res://img/vent.png" id="2_ghror"]
@@ -18,71 +18,6 @@ size = Vector2(128, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7gypu"]
 size = Vector2(45, 98)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_ot0dv"]
-a = Vector2(119, 416)
-b = Vector2(51, 480)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_ut6ku"]
-a = Vector2(52, 475)
-b = Vector2(55, 600)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_8xfjo"]
-a = Vector2(50, 602)
-b = Vector2(87, 635)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_ibk65"]
-a = Vector2(834, 636)
-b = Vector2(92, 633)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_kjf22"]
-a = Vector2(838, 494)
-b = Vector2(836, 633)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_6ymdj"]
-a = Vector2(650, 515)
-b = Vector2(841, 491)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_55h1v"]
-a = Vector2(645, 476)
-b = Vector2(816, 450)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_1sq82"]
-a = Vector2(884, 356)
-b = Vector2(818, 444)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_re2bg"]
-a = Vector2(882, 360)
-b = Vector2(1005, 356)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_itpmp"]
-a = Vector2(1005, 354)
-b = Vector2(1153, 479)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_o581p"]
-a = Vector2(1151, 477)
-b = Vector2(1150, 32)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_hfeww"]
-a = Vector2(726, 296)
-b = Vector2(837, 281)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_iw4jn"]
-a = Vector2(700, 322)
-b = Vector2(726, 295)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_58xk0"]
-a = Vector2(699, 323)
-b = Vector2(687, 357)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbymr"]
-size = Vector2(33, 291)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fmcd2"]
-size = Vector2(1144, 39)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rkob6"]
-size = Vector2(622.5, 53)
 
 [node name="KB3" type="Node2D"]
 
@@ -235,7 +170,7 @@ shape = SubResource("RectangleShape2D_prncc")
 layout_mode = 0
 offset_left = 360.0
 offset_top = 136.0
-offset_right = 2420.0
+offset_right = 2424.0
 offset_bottom = 658.0
 texture = ExtResource("4_fp6v6")
 
@@ -248,10 +183,9 @@ shape = SubResource("RectangleShape2D_vgrqd")
 
 [node name="table_green2" type="TextureRect" parent="TextureRect"]
 layout_mode = 0
-offset_left = 357.0
-offset_top = 57.0
-offset_right = 2417.0
-offset_bottom = 579.0
+offset_left = 356.0
+offset_right = 2416.0
+offset_bottom = 522.0
 texture = ExtResource("4_fp6v6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_green2"]
@@ -264,9 +198,9 @@ shape = SubResource("RectangleShape2D_vgrqd")
 [node name="table_green3" type="TextureRect" parent="TextureRect"]
 layout_mode = 0
 offset_left = 357.0
-offset_top = -27.0
+offset_top = 69.0
 offset_right = 2417.0
-offset_bottom = 495.0
+offset_bottom = 591.0
 texture = ExtResource("4_fp6v6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect/table_green3" groups=["wall"]]
@@ -292,60 +226,11 @@ texture_filter = 1
 position = Vector2(406.5, 276)
 shape = SubResource("RectangleShape2D_7gypu")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["wall"]]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 4
 
-[node name="CollisionShape2D16" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_ot0dv")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(676, 399, 686, 400, 687, 351, 705, 324, 731, 297, 764, 286, 838, 284, 838, 288, 848, 288, 846, 290, 872, 292, 871, 194, 874, 191, 875, 143, 875, 34, 1149, 33, 1148, 473, 1008, 361, 1008, 353, 902, 354, 903, 357, 883, 357, 883, 361, 856, 381, 824, 434, 816, 446, 796, 446, 796, 450, 773, 450, 773, 453, 750, 454, 750, 458, 728, 458, 727, 462, 709, 462, 709, 465, 687, 466, 686, 469, 663, 470, 663, 473, 645, 473, 644, 479, 663, 477, 665, 473, 687, 473, 687, 470, 708, 469, 711, 466, 727, 465, 729, 462, 750, 462, 749, 459, 773, 458, 774, 454, 796, 454, 797, 450, 814, 450, 813, 488, 815, 489, 815, 448, 819, 448, 819, 490, 815, 490, 815, 492, 838, 492, 838, 635, 90, 635, 91, 632, 54, 601, 54, 475, 81, 454, 118, 419, 118, 411, 384, 411, 384, 408, 581, 407, 581, 404, 683, 404, 682, 400, 627, 287, 316, 294, 14, 357, -57, 419, 9, 667, 353, 662, 752, 679, 1188, 592, 1175, 460, 1188, 266, 1173, 14, 983, 3, 861, 13, 754, 44, 647, 355)
 
-[node name="CollisionShape2D15" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_ut6ku")
-
-[node name="CollisionShape2D14" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_8xfjo")
-
-[node name="CollisionShape2D17" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_ibk65")
-
-[node name="CollisionShape2D13" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_kjf22")
-
-[node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_6ymdj")
-
-[node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_55h1v")
-
-[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_1sq82")
-
-[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_re2bg")
-
-[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_itpmp")
-
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_o581p")
-
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_hfeww")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_iw4jn")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-shape = SubResource("SegmentShape2D_58xk0")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-position = Vector2(853.5, 145.5)
-shape = SubResource("RectangleShape2D_tbymr")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-position = Vector2(582, 9.5)
-shape = SubResource("RectangleShape2D_fmcd2")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" groups=["wall"]]
-position = Vector2(371, 382)
-shape = SubResource("RectangleShape2D_rkob6")
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(645, 519, 645, 512, 668, 512, 668, 508, 696, 508, 696, 505, 723, 504, 723, 500, 751, 500, 751, 496, 760, 497, 760, 492, 787, 492, 787, 489, 801, 489, 801, 485, 813, 485, 813, 489, 802, 488, 801, 492, 787, 493, 787, 496, 764, 496, 764, 500, 755, 500, 755, 504, 728, 504, 727, 508, 700, 508, 700, 512, 672, 512, 672, 515, 654, 516, 654, 519)

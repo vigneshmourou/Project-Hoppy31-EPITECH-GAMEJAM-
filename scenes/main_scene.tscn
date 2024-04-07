@@ -1,10 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://2if6erpc5m6i"]
+[gd_scene load_steps=10 format=3 uid="uid://2if6erpc5m6i"]
 
 [ext_resource type="Script" path="res://script/main_scene.gd" id="1_o0cho"]
 [ext_resource type="PackedScene" uid="uid://drrxddg4rdwsc" path="res://scenes/maps/KB2.tscn" id="1_vyvvn"]
-[ext_resource type="PackedScene" path="res://scenes/npc/ilyas_npc.tscn" id="3_7kjuh"]
+[ext_resource type="PackedScene" uid="uid://klfcrfl5uh6l" path="res://scenes/npc/ilyas_npc.tscn" id="3_7kjuh"]
 [ext_resource type="PackedScene" uid="uid://ccjx3oge4wesk" path="res://scenes/character.tscn" id="3_a0l60"]
 [ext_resource type="PackedScene" uid="uid://cckcdl4luo4gc" path="res://scenes/portal.tscn" id="4_lx71y"]
+[ext_resource type="Script" path="res://script/doors.gd" id="6_7etox"]
+[ext_resource type="Script" path="res://script/exit.gd" id="7_63sbb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbgx0"]
+size = Vector2(86.3558, 8.28113)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cx1jo"]
+size = Vector2(56, 10.1358)
 
 [node name="main_scene" type="Node2D" groups=["wall"]]
 script = ExtResource("1_o0cho")
@@ -16,7 +24,7 @@ position = Vector2(0, 1)
 position = Vector2(216, 605)
 
 [node name="Character" parent="." instance=ExtResource("3_a0l60")]
-position = Vector2(733, 313)
+position = Vector2(766, 331)
 
 [node name="Portal_ape" parent="." instance=ExtResource("4_lx71y")]
 position = Vector2(741, 482)
@@ -27,3 +35,22 @@ target_map_path = "res://scenes/APE_scene.tscn"
 [node name="Portal_kb4" parent="." instance=ExtResource("4_lx71y")]
 position = Vector2(936, 61)
 target_map_path = "res://scenes/kb_4_scene.tscn"
+
+[node name="doors" type="Area2D" parent="."]
+script = ExtResource("6_7etox")
+
+[node name="doors_collision" type="CollisionShape2D" parent="doors"]
+position = Vector2(727.051, 324.205)
+rotation = -0.71733
+shape = SubResource("RectangleShape2D_qbgx0")
+
+[node name="exit" type="Area2D" parent="."]
+script = ExtResource("7_63sbb")
+
+[node name="exit_collision" type="CollisionShape2D" parent="exit"]
+position = Vector2(720, 315)
+rotation = -0.71733
+shape = SubResource("RectangleShape2D_cx1jo")
+
+[connection signal="body_entered" from="doors" to="doors" method="_on_body_entered"]
+[connection signal="body_entered" from="exit" to="exit" method="_on_body_entered"]

@@ -5,6 +5,7 @@ var has_talk = false
 
 func _on_joffrey_area_body_entered(body):
 	if body.has_method("main_caract"):
+		Global.joffrey_status = true
 		if has_talk == false:
 			has_talk = true
 			DialogueManager.show_example_dialogue_balloon(load("res://dialogue/joffrey.dialogue"), "start")

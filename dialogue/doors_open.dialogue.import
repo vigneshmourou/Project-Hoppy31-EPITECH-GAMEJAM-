@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://b0n4a8ksgaj6g"
+path="res://.godot/imported/doors_open.dialogue-413692a2948a1e579d681029b78b01b5.tres"
+
+[deps]
+
+source_file="res://dialogue/doors_open.dialogue"
+dest_files=["res://.godot/imported/doors_open.dialogue-413692a2948a1e579d681029b78b01b5.tres"]
+
+[params]
+
+defaults=true

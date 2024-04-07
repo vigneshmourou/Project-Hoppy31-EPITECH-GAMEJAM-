@@ -1,12 +1,17 @@
-extends Node2D
+extends Area2D
 
-var current_scene = "kb4"
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Character/character_animation.animation = "player_backward"
-	$Laura_npc/laura_animation.flip_h = true
-	Global.last_scene = current_scene
+	pass # Replace with function body.
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_body_entered(body):
+	if body.name != "hoppy":
+		if Global.exit_status == true:
+			get_tree().quit(0)

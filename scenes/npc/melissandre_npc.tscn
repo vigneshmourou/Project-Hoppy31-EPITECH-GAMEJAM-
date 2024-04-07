@@ -1,10 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqoqpky082p1h"]
+[gd_scene load_steps=6 format=3 uid="uid://bqoqpky082p1h"]
 
 [ext_resource type="Script" path="res://scenes/npc/melissandre_npc.gd" id="1_2kdom"]
+[ext_resource type="Texture2D" uid="uid://kifn4f33rqa4" path="res://sprite/npc/Mely/lunette_mely.png" id="2_2gtuq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52ha3"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2gtuq")
+}],
 "loop": true,
 "name": &"face",
 "speed": 5.0

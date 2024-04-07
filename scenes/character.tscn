@@ -148,3 +148,6 @@ animation = &"hoppy_left"
 [node name="hoppy_colli" type="CollisionShape2D" parent="hoppy"]
 position = Vector2(1.5, 8.85714)
 shape = SubResource("RectangleShape2D_mugnr")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)

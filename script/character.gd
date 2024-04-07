@@ -17,7 +17,6 @@ func _physics_process(delta):
 
 func _process(delta):
 	motion = Vector2.ZERO
-
 	if Input.is_action_pressed("move_forward"):
 		motion.y -= 2
 		$character_animation.animation = "player_forward"

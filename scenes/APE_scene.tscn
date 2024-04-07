@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://dc71cdf37lqeh"]
+[gd_scene load_steps=8 format=3 uid="uid://dc71cdf37lqeh"]
 
+[ext_resource type="Script" path="res://script/APE_scene.gd" id="1_cuimq"]
 [ext_resource type="PackedScene" uid="uid://g2iiwvfb463m" path="res://scenes/maps/APE.tscn" id="1_nb7mo"]
 [ext_resource type="PackedScene" uid="uid://cckcdl4luo4gc" path="res://scenes/portal.tscn" id="2_dgpsw"]
 [ext_resource type="PackedScene" uid="uid://ccjx3oge4wesk" path="res://scenes/character.tscn" id="3_hfkry"]
@@ -7,7 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://d3uqc23h08uxt" path="res://scenes/npc/arthur.tscn" id="5_hpi8p"]
 [ext_resource type="PackedScene" uid="uid://lgy7gt2wak5s" path="res://scenes/npc/thomas_npc.tscn" id="6_7mykp"]
 
-[node name="KB4_scene" type="Node2D"]
+[node name="APE_scene" type="Node2D"]
+script = ExtResource("1_cuimq")
 
 [node name="APE" parent="." instance=ExtResource("1_nb7mo")]
 

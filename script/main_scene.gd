@@ -4,7 +4,6 @@ var motion
 var current_scene = "kb2"
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print(Global.last_scene)
 	if Global.last_scene == "ape":
 		$Character.position = Vector2(641, 477)
 		$Character/character_animation.animation = "player_left"

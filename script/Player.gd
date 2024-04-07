@@ -53,3 +53,6 @@ func _process(delta):
 		
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
+
+func main_caract():
+	pass

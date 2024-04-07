@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqoqpky082p1h"]
+[gd_scene load_steps=5 format=3 uid="uid://bqoqpky082p1h"]
+
+[ext_resource type="Script" path="res://scenes/npc/mélissandre_npc.gd" id="1_2kdom"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52ha3"]
 animations = [{
@@ -16,6 +18,7 @@ height = 14.0
 radius = 31.4006
 
 [node name="Mélissandre_npc" type="CharacterBody2D"]
+script = ExtResource("1_2kdom")
 
 [node name="melissandre_animation" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -30,3 +33,5 @@ shape = SubResource("CapsuleShape2D_rspis")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="melissandre_area"]
 shape = SubResource("CircleShape2D_h0npa")
+
+[connection signal="body_entered" from="melissandre_area" to="." method="_on_melissandre_area_body_entered"]

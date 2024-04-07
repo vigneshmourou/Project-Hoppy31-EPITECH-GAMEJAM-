@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bqoqpky082p1h"]
 
-[ext_resource type="Script" path="res://scenes/npc/mélissandre_npc.gd" id="1_2kdom"]
+[ext_resource type="Script" path="res://scenes/npc/melissandre_npc.gd" id="1_2kdom"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52ha3"]
 animations = [{

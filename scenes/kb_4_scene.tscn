@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ccjx3oge4wesk" path="res://scenes/character.tscn" id="2_himr0"]
 [ext_resource type="PackedScene" uid="uid://cckcdl4luo4gc" path="res://scenes/portal.tscn" id="3_fvmd6"]
 [ext_resource type="PackedScene" uid="uid://3mjlda3qy8ay" path="res://scenes/npc/alexandre_npc.tscn" id="3_j4qgj"]
-[ext_resource type="PackedScene" uid="uid://bqoqpky082p1h" path="res://scenes/npc/mélissandre_npc.tscn" id="5_r4kqv"]
+[ext_resource type="PackedScene" uid="uid://bqoqpky082p1h" path="res://scenes/npc/melissandre_npc.tscn" id="5_r4kqv"]
 [ext_resource type="PackedScene" uid="uid://dcscy1f73xm0w" path="res://scenes/npc/laura_npc.tscn" id="6_g7g3h"]
 
 [node name="KB4_scene" type="Node2D"]

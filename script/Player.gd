@@ -1,7 +1,7 @@
 extends Area2D
 signal hit
 
-@export var speed = 400
+@export var speed = 200
 var screen_size
 
 # Called when the node enters the scene tree for the first time.
@@ -18,20 +18,20 @@ func _process(delta):
 	var velocity = Vector2.ZERO
 
 	if Input.is_action_pressed("move_forward"):
-		velocity.y -= 1
+		velocity.y -= 2
 		$player_animation.animation = "forward"
 		$hoppy/hoppy_animation.animation = "hoppy_forward"
 	if Input.is_action_pressed("move_backward"):
-		velocity.y += 1
+		velocity.y += 2
 		$player_animation.animation = "backward"
 		$hoppy/hoppy_animation.animation = "hoppy_backward"
 	if Input.is_action_pressed("move_left"):
-		velocity.x -= 1
+		velocity.x -= 2
 		$player_animation.animation = "left"
 		$hoppy/hoppy_animation.animation = "hoppy_left"
 		$hoppy.position = Vector2(21, 10)
 	if Input.is_action_pressed("move_right"):
-		velocity.x += 1
+		velocity.x += 2
 		$player_animation.animation = "left"
 		$hoppy/hoppy_animation.animation = "hoppy_left"
 		$hoppy.position = Vector2(-21, 10)

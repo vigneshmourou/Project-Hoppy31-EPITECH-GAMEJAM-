@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://script/main_scene.gd" id="1_o0cho"]
 [ext_resource type="PackedScene" uid="uid://drrxddg4rdwsc" path="res://scenes/maps/KB2.tscn" id="1_vyvvn"]
-[ext_resource type="PackedScene" uid="uid://klfcrfl5uh6l" path="res://scenes/npc/ilyas_npc.tscn" id="3_7kjuh"]
+[ext_resource type="PackedScene" path="res://scenes/npc/ilyas_npc.tscn" id="3_7kjuh"]
 [ext_resource type="PackedScene" uid="uid://ccjx3oge4wesk" path="res://scenes/character.tscn" id="3_a0l60"]
 [ext_resource type="PackedScene" uid="uid://cckcdl4luo4gc" path="res://scenes/portal.tscn" id="4_lx71y"]
 

@@ -3,7 +3,7 @@ extends CharacterBody2D
 var speed = 200
 var screen_size
 var motion = Vector2.ZERO
-var start_game = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -18,8 +18,8 @@ func _physics_process(delta):
 
 func _process(delta):
 	motion = Vector2.ZERO
-	if start_game == false:
-		start_game = true
+	if Global.start_game == false:
+		Global.start_game = true
 		DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "start_game")
 	if Input.is_action_pressed("move_forward"):
 		motion.y -= 2

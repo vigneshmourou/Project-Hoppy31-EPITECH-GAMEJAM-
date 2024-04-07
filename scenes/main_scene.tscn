@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://2if6erpc5m6i"]
+[gd_scene load_steps=6 format=3 uid="uid://2if6erpc5m6i"]
 
 [ext_resource type="Script" path="res://script/main_scene.gd" id="1_o0cho"]
 [ext_resource type="PackedScene" uid="uid://drrxddg4rdwsc" path="res://scenes/maps/KB2.tscn" id="1_vyvvn"]
+[ext_resource type="PackedScene" uid="uid://klfcrfl5uh6l" path="res://scenes/npc/ilyas_npc.tscn" id="3_7kjuh"]
 [ext_resource type="PackedScene" uid="uid://ccjx3oge4wesk" path="res://scenes/character.tscn" id="3_a0l60"]
 [ext_resource type="PackedScene" uid="uid://cckcdl4luo4gc" path="res://scenes/portal.tscn" id="4_lx71y"]
 
@@ -11,14 +12,17 @@ script = ExtResource("1_o0cho")
 [node name="KB3" parent="." groups=["wall"] instance=ExtResource("1_vyvvn")]
 position = Vector2(0, 1)
 
+[node name="Ilyas_npc" parent="." instance=ExtResource("3_7kjuh")]
+position = Vector2(216, 605)
+
+[node name="Character" parent="." instance=ExtResource("3_a0l60")]
+position = Vector2(733, 313)
+
 [node name="Portal_ape" parent="." instance=ExtResource("4_lx71y")]
 position = Vector2(741, 482)
 rotation = 1.52367
 scale = Vector2(0.9, 0.9)
 target_map_path = "res://scenes/APE_scene.tscn"
-
-[node name="Character" parent="." instance=ExtResource("3_a0l60")]
-position = Vector2(733, 313)
 
 [node name="Portal_kb4" parent="." instance=ExtResource("4_lx71y")]
 position = Vector2(936, 61)
